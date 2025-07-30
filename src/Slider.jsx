@@ -1,19 +1,16 @@
 import React from 'react';
-import './Slider.css'; // or use styled-components / CSS Modules
+import './Slider.css';
 
 const Slider = ({ slides = [] }) => {
+  const loopedSlides = [...slides, ...slides]; // clone slides for looping
+
   return (
-    <div className="slider">
-      <div className="slider__track">
-        {slides.map((slide, idx) => (
-          <div className="slider__slide" key={idx}>
+    <div className="infinite-slider">
+      <div className="infinite-slider__track">
+        {loopedSlides.map((slide, idx) => (
+          <div className="infinite-slider__slide" key={idx}>
             <img src={slide} alt={`Slide ${idx}`} />
           </div>
-        ))}
-      </div>
-      <div className="slider__nav">
-        {slides.map((_, idx) => (
-          <a href={`#slide-${idx}`} key={idx} className="slider__dot" />
         ))}
       </div>
     </div>
