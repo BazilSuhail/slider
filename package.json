@@ -1,0 +1,20 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "description": "A lightweight, customizable bottom sheet component for **React Native** and **Expo** applications. Built with native components and animations for seamless integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BazilSuhail/slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BazilSuhail/slider/issues"
+  },
+  "homepage": "https://github.com/BazilSuhail/slider#readme"
+}
